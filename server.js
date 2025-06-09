@@ -4,6 +4,16 @@ import cors from 'cors'
 import { fileURLToPath } from 'url';
 import path from 'path';
 
+// import { NextResponse } from 'next/server';
+// import { get } from '@vercel/edge-config';
+
+// export const config = { matcher: '/welcome' };
+
+// export async function middleware() {
+//   const greeting = await get('greeting');
+//   return NextResponse.json(greeting);
+// }
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 

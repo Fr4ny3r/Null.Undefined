@@ -1,5 +1,5 @@
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { BoxUserHome } from "./BoxUserHome";
 import type { Post } from '../tyes'
 
@@ -8,6 +8,7 @@ import type { Post } from '../tyes'
 function BoxHome({ datos, isActive, onActivate }: { datos: Post, isActive: boolean, onActivate: (act : boolean) => void }) {
 
     const [vvalorBoleano, fvalorBoleano ] = useState(false)
+    const [focus, setFocus] = useState<number>()
     // const [onfocus, isFocused] = useState<boolean>(false)
     
 
